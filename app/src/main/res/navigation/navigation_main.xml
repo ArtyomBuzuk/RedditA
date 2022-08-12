@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.artyombuzuk.reddita.main_fragment.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_authorizationFragment"
+            app:destination="@id/authorizationFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentWeb"
+            app:destination="@id/fragmentWeb" />
+        <action
+            android:id="@+id/action_mainFragment_to_navigationFragment"
+            app:destination="@id/navigationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/authorizationFragment"
+        android:name="com.artyombuzuk.reddita.auth.AuthorizationFragment"
+        android:label="AuthorizationFragment" >
+        <action
+            android:id="@+id/action_authorizationFragment_to_fragmentWeb"
+            app:destination="@id/fragmentWeb" />
+        <action
+            android:id="@+id/action_authorizationFragment_to_navigationFragment"
+            app:destination="@id/navigationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentWeb"
+        android:name="com.artyombuzuk.reddita.auth.WebFragment.FragmentWeb"
+        android:label="FragmentWeb" />
+    <fragment
+        android:id="@+id/navigationFragment"
+        android:name="com.artyombuzuk.reddita.NavigationFragment.NavigationFragment"
+        android:label="NavigationFragment" >
+        <action
+            android:id="@+id/action_navigationFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>

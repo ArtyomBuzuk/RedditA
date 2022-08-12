@@ -1,3 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">RedditA</string>
+    <string name="authorization">Авторизация</string>
+    <string name="registration">Регистрация</string>
+    <string name="sign_in">Авторизироваться</string>
+    <string name="reddita">RedditA</string>
+    <string name="new_">Новое</string>
+    <string name="popular">Популярное</string>
+    <string name="share">поделиться</string>
+    <string name="comments">комментарии</string>
+    <string name="log_out">Выйти</string>
+    <string name="comments_are_empty">Комментарии пусты</string>
+    <string name="posts">посты</string>
+    <string name="see_all"><![CDATA[see all >]]></string>
+    <string name="no_internet_connection">Нет интернет соединения</string>
+    <string name="friends">Друзья:</string>
+    <string name="unable_to_get_data">Не удалось получить данные</string>
+    <string name="saved_successfully">Успешно сохранено</string>
+    <string name="unsaved_successfully">Успешно удалено</string>
+    <string name="unable_to_save">Не удалось сохранить</string>
+    <string name="unable_to_unsave">Не удалось удалить</string>
+    <string name="add_comment">Добавить комментарий</string>
+    <string name="comment_has_been_added">Комментарий добавлен</string>
+    <string name="error_comment_was_not_added">Ошибка, комментарий не был добавлен</string>
+    <string name="now">сейчас</string>
+    <string name="posted">опубликовано</string>
+    <string name="minutes_ago">мину(т/ты) назад</string>
+    <string name="hours_ago">час(а/ов) назад</string>
+    <string name="search">Поиск</string>
+    <string name="save_post">Сохранить пост</string>
+    <string name="local">Локально</string>
+    <string name="online">Онлайн</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="cancel">Отменить</string>
+    <string name="delete_item">Удалить выбранный элемент?</string>
 </resources>

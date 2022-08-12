@@ -10,38 +10,38 @@
         android:id="@+id/imageView"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:src="@drawable/ic_reddit_svgrepo_com"
+        android:src="@drawable/ic_reddit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/redditATextView"
+        android:textColor="@color/c900"
+        android:id="@+id/texTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:gravity="center"
-        android:text="RedditA"
+        android:text="@string/reddita"
         android:textSize="34sp"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
-        android:layout_marginTop="50dp"
         android:id="@+id/authButton"
         style="@style/ButtonStyle"
         android:layout_width="250dp"
         android:layout_height="60dp"
-        android:text="Войти"
+        android:text="@string/sign_in"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/redditATextView" />
+        app:layout_constraintTop_toBottomOf="@+id/texTextView" />
 
     <Button
         android:id="@+id/registrationButton"
         style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Регистрация"
+        android:text="@string/registration"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/authButton" />
