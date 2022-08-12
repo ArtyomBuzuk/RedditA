@@ -1,8 +1,8 @@
 package com.artyombuzuk.reddita.DataBase
 
 import androidx.room.TypeConverter
-import com.artyombuzuk.reddita.PostType
-import com.artyombuzuk.reddita.RedditPost
+import com.artyombuzuk.reddita.subreddit.subredditRecyclerView.PostType
+import com.artyombuzuk.reddita.subreddit.subredditRecyclerView.RedditPost
 import com.google.gson.Gson
 import org.json.JSONObject
 

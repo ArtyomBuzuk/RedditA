@@ -1,6 +1,6 @@
-package com.example.tex.retrofit
+package com.artyombuzuk.reddita.retrofit
 
-import com.artyombuzuk.reddita.PermanentStorage
+import com.artyombuzuk.reddita.others.PermanentStorage
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

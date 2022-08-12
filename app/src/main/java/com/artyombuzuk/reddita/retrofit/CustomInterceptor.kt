@@ -1,4 +1,4 @@
-package com.example.tex.retrofit
+package com.artyombuzuk.reddita.retrofit
 
 import okhttp3.Interceptor
 import okhttp3.Response

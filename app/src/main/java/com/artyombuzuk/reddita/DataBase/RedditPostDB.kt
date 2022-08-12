@@ -3,7 +3,7 @@ package com.artyombuzuk.reddita.DataBase
 import androidx.room.Entity
 import androidx.room.Index
 import androidx.room.PrimaryKey
-import com.artyombuzuk.reddita.RedditPost
+import com.artyombuzuk.reddita.subreddit.subredditRecyclerView.RedditPost
 
 @Entity(
     tableName = "RedditPost",

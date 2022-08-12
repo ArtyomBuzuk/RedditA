@@ -1,4 +1,4 @@
-package com.artyombuzuk.reddita
+package com.artyombuzuk.reddita.subreddit.subredditRecyclerView
 
 enum class PostType {
     SimplePost,

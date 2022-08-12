@@ -1,4 +1,4 @@
-package com.artyombuzuk.reddita
+package com.artyombuzuk.reddita.others
 
 import android.content.BroadcastReceiver
 import android.content.Context
