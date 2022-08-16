@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ui_navigation"
+    app:startDestination="@id/subredditFragment">
+    <fragment
+        android:id="@+id/subredditFragment"
+        android:name="com.artyombuzuk.reddita.subreddit.SubredditFragment"
+        android:label="SubredditFragment"
+        tools:layout="@layout/subreddit_fragment">
+        <action
+            android:id="@+id/action_subredditFragment_to_simpleDetailedPostFragment"
+            app:destination="@id/simpleDetailedPostFragment"
+            app:enterAnim="@anim/enter_animation"
+            app:exitAnim="@anim/slide_out_from_right"
+            app:popEnterAnim="@anim/exit_animation"
+            app:popExitAnim="@anim/slide_out_from_left" />
+        <action
+            android:id="@+id/action_subredditFragment_to_imageDetailedPostFragment"
+            app:destination="@id/imageDetailedPostFragment"
+            app:enterAnim="@anim/enter_animation"
+            app:exitAnim="@anim/slide_out_from_right"
+            app:popEnterAnim="@anim/exit_animation"
+            app:popExitAnim="@anim/slide_out_from_left" />
+        <action
+            android:id="@+id/action_subredditFragment_to_videoDetailedPostFragment"
+            app:destination="@id/videoDetailedPostFragment"
+            app:enterAnim="@anim/enter_animation"
+            app:exitAnim="@anim/slide_out_from_right"
+            app:popEnterAnim="@anim/exit_animation"
+            app:popExitAnim="@anim/slide_out_from_left" />
+        <action
+            android:id="@+id/action_subredditFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentSaved"
+        android:name="com.artyombuzuk.reddita.FragmentSaved.FragmentSaved"
+        android:label="FragmentSaved"
+        tools:layout="@layout/fragment_saved">
+        <action
+            android:id="@+id/action_fragmentSaved_to_simpleDetailedPostFragment"
+            app:destination="@id/simpleDetailedPostFragment" />
+        <action
+            android:id="@+id/action_fragmentSaved_to_imageDetailedPostFragment"
+            app:destination="@id/imageDetailedPostFragment" />
+        <action
+            android:id="@+id/action_fragmentSaved_to_videoDetailedPostFragment"
+            app:destination="@id/videoDetailedPostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.artyombuzuk.reddita.profileFragment.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/profile_fragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/simpleDetailedPostFragment"
+        android:name="com.artyombuzuk.reddita.detailedPost.simplePost.SimpleDetailedPostFragment"
+        android:label="SimpleDetailedPostFragment" >
+        <argument
+            android:name="item"
+            app:argType="com.artyombuzuk.reddita.subreddit.subredditRecyclerView.RedditPost$SimplePost" />
+        <action
+            android:id="@+id/action_simpleDetailedPostFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageDetailedPostFragment"
+        android:name="com.artyombuzuk.reddita.detailedPost.ImagePost.ImageDetailedPostFragment"
+        android:label="ImageDetailedPostFragment" >
+        <argument
+            android:name="item"
+            app:argType="com.artyombuzuk.reddita.subreddit.subredditRecyclerView.RedditPost$ImagePost" />
+        <action
+            android:id="@+id/action_imageDetailedPostFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoDetailedPostFragment"
+        android:name="com.artyombuzuk.reddita.detailedPost.videoPost.VideoDetailedPostFragment"
+        android:label="VideoDetailedPostFragment" >
+        <argument
+            android:name="item"
+            app:argType="com.artyombuzuk.reddita.subreddit.subredditRecyclerView.RedditPost$VideoPost" />
+        <action
+            android:id="@+id/action_videoDetailedPostFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+</navigation>
